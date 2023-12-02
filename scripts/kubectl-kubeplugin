@@ -1,5 +1,16 @@
 #!/bin/bash
 
+# To install the plugin
+#sudo chmod +x ./scripts/kubectl-kubeplugin
+
+#and place it anywhere in your PATH:
+#sudo mv ./kubectl-kubeplugin /usr/local/bin
+
+# Usage: kubectl kubeplugin <namespace> <resource>
+# example: kubectl kubeplugin kube-system pod
+# metrics-service should be available
+
+
 # Define command-line arguments
 NAMESPACE=$1
 RESOURCE_TYPE=$2
